@@ -6,7 +6,7 @@ The Diabetes Pedigree Function (DPF) is a tool used to assess genetic risk for d
 ## Data Analysis and Modeling Approach
 ### Data Exploration:
 
-The dataset used is the Pima Indians Diabetes Database, containing 768 entries and 9 columns including features like Glucose, Blood Pressure, BMI, and the target variable, DiabetesPedigreeFunction (DPF).
+The dataset used is the Pima Indians Diabetes Database, containing 768 entries and 8 columns including features like Glucose, Blood Pressure, BMI, and the target variable, DiabetesPedigreeFunction (DPF).
 ### Data Pre-processing:
 
  - Zeros in critical columns (Glucose, BloodPressure, etc.) were replaced with NaNs to represent missing data more accurately.
