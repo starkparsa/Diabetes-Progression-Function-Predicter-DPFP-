@@ -21,6 +21,6 @@ The dataset used is the Pima Indians Diabetes Database, containing 768 entries a
  - This approach integrates data exploration, pre-processing, and machine learning modeling to derive insights and predictive capabilities relevant to diabetes risk assessment using the Diabetes Pedigree Function.
 
 ### WEB API:
-- After fitting the XG Boost model exported the model as an executable file such that the model can used to predict the users DPF.
-- Used flask library to produce a simple web api so that a user can access the platform.
-- This now has a basic skeleton of HTML and CSS such that it is user accessible.
+- Exported the trained XG Boost model as an executable file such that the model can used as a function to help predict the user's DPF.
+- Utilized flask library to produce a simple web api such that a user can access the platform.
+- Implemented HTML and CSS such that the web api is user-friendly.
