@@ -68,8 +68,15 @@
 
             {% if DPF is not none %}
             <div class="notification is-success mt-5">
+                <p>The person of Age {{ Age }} with:
+                    <li>blood pressure of {{ BP }}</li>
+                    <li>Skin Thickness {{ST}}</li>
+                    <li>Insulin {{ Insu }}</li>
+                    <li>Glucose {{ Glu }} </li>
+                    <li>BMI {{ BMI }} </li>
+                    <li>{{ Preg }} pregnancies has</li></p>
                 <p><strong>Predicted DPF:</strong> {{ DPF }}</p>
-                <p><strong>Diabetes Risk Percentage :</strong> {{ DPF_percentage }}%</p>
+                <p><strong>Diabetes Risk Percentage:</strong> {{ DPF_percentage }}%</p>
             </div>
             {% endif %}
 
