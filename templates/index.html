@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Pedigree Function Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css') }}">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Diabetes Pedigree Function Prediction</h1>
+
+            <form method="post" action="/predict">
+                <div class="field">
+                    <label class="label">Pregnancies</label>
+                    <div class="control">
+                        <input class="input" type="number" name="Pregnancies" step="1" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Glucose</label>
+                    <div class="control">
+                        <input class="input" type="number" name="Glucose" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Blood Pressure</label>
+                    <div class="control">
+                        <input class="input" type="number" name="BloodPressure" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Skin Thickness</label>
+                    <div class="control">
+                        <input class="input" type="number" name="SkinThickness" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Insulin</label>
+                    <div class="control">
+                        <input class="input" type="number" name="Insulin" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">BMI</label>
+                    <div class="control">
+                        <input class="input" type="number" name="BMI" step="0.01" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Age</label>
+                    <div class="control">
+                        <input class="input" type="number" name="Age" step="1" required>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <button class="button is-primary" type="submit">Predict</button>
+                </div>
+            </form>
+
+            {% if DPF is not none %}
+            <div class="notification is-success mt-5">
+                <p><strong>Predicted DPF:</strong> {{ DPF }}</p>
+                <p><strong>Diabetes Risk Percentage :</strong> {{ DPF_percentage }}%</p>
+            </div>
+            {% endif %}
+
+            {% if error %}
+            <div class="notification is-danger mt-5">
+                <p><strong>Error:</strong> {{ error }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>
