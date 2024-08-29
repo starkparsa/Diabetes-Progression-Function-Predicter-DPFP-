@@ -1,4 +1,4 @@
-# Diabetes-Progression-Function-Predicter-DPFP
+# Diabetes-Progression-Function-Predictor-DPFP
 
 ## Problem Statement
 The Diabetes Pedigree Function (DPF) is a tool used to assess genetic risk for diabetes based on family history, introduced in 1993 as part of the Diabetes Genetics Initiative. It calculates a score indicating an individual's likelihood of developing diabetes, which increases with each affected first-degree relative. This score helps categorize individuals into risk groups, though genetics is just one aspect of diabetes risk alongside lifestyle and environmental factors.
@@ -6,7 +6,7 @@ The Diabetes Pedigree Function (DPF) is a tool used to assess genetic risk for d
 ## Data Analysis and Modeling Approach
 ### Data Exploration:
 
-The dataset used is the Pima Indians Diabetes Database, containing 768 entries and 9 columns including features like Glucose, Blood Pressure, BMI, and the target variable, DiabetesPedigreeFunction (DPF).
+The dataset used is the Pima Indians Diabetes Database, containing 768 entries and 8 columns including features like Glucose, Blood Pressure, BMI, and the target variable, DiabetesPedigreeFunction (DPF).
 ### Data Pre-processing:
 
  - Zeros in critical columns (Glucose, BloodPressure, etc.) were replaced with NaNs to represent missing data more accurately.
