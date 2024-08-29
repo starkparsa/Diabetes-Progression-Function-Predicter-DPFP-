@@ -23,7 +23,7 @@ def predict():
         DPF, DPF_percentage = XGB(Preg, Glu, BP, ST, Insu, BMI, Age)
         
         # Render the template with the prediction results
-        return render_template('index.html', DPF=DPF, DPF_percentage=DPF_percentage, error=None)
+        return render_template('index.html',Preg = Preg, Glu = Glu, BP = BP, ST = ST, Insu = Insu, BMI = BMI, Age = int(Age), DPF=DPF, DPF_percentage=DPF_percentage, error=None)
     
     except Exception as e:
         return render_template('index.html', DPF=None, DPF_percentage=None, error=str(e))
