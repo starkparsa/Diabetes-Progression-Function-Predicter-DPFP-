@@ -19,3 +19,8 @@ The dataset used is the Pima Indians Diabetes Database, containing 768 entries a
 
  - XGBoost outperformed Random Forest in predicting the DPF based on the dataset, indicating its suitability for this specific problem. Further refinement and optimization could enhance predictive accuracy, leveraging both genetic and clinical data for diabetes risk assessment.
  - This approach integrates data exploration, pre-processing, and machine learning modeling to derive insights and predictive capabilities relevant to diabetes risk assessment using the Diabetes Pedigree Function.
+
+### WEB API:
+- After fitting the XG Boost model exported the model as an executable file such that the model can used to predict the users DPF.
+- Used flask library to produce a simple web api so that a user can access the platform.
+- This now has a basic skeleton of HTML and CSS such that it is user accessible.
